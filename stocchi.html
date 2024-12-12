@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi Stocchi</title>
+    <link rel="stylesheet" href="stocchi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar with Phone Number and Opening Hours -->
+    <div class="top-bar">
+        <span class="phone-number">
+            <img src="call.svg" alt="Call Icon" class="icon"> +49 881/ 3682
+        </span>
+        <span class="opening-hours">
+            <img src="time.svg" alt="Time Icon" class="icon">Mo-Fr 9:00 - 18:00
+        </span>
+    </div>
+  <main>
+    <!-- Header -->
+    <header>
+        <h1><a href="#">TAXI STOCCHI</a></h1>
+        <nav class="nav-links">
+            <a href="#">Kontakt</a>
+            <a href="#">Geschichte</a>
+            <a href="#">Dienstleistungen</a>
+        </nav>
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+    
+    <!-- Hero Section with Image and Description -->
+    <section class="hero">
+        <img src="taxifoto.jpeg" alt="Taxi Stocchi">
+        <div class="hero-text">
+            <h2>Schnell, Sicher, Zuverlässig.</h2>
+            <p>Das Taxiunternehmen für Weilheim und die Umgebung.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service">
+            <h3>Krankenfahrten</h3>
+            <p>Unser Krankenfahrten-Service bringt Sie sicher ans Ziel – im In- und Ausland! 
+                Wir arbeiten mit allen Krankenkassen zusammen, damit Ihre Fahrt angenehm und stressfrei wird. 
+                Kontaktieren Sie uns für eine Terminvereinbarung!</p>
+            <img src="sick.svg">  
+        </div>
+        <div class="option">
+            <h3>Zahlungsmethoden</h3>
+            <p>Bei uns können Sie ganz bequem mit Ihrer Kreditkarte zahlen.</p>
+            <img src="creditcard.svg">
+        </div>
+        <div class="service">
+            <h3>Botenfahrten</h3>
+            <p>Unser Botenfahrten-Service bietet sicheren und schnellen Transport – zuverlässig und pünktlich! Ob Dokumente, 
+                Pakete oder Medikamente, wir bringen alles sicher ans Ziel. Kontaktieren Sie uns für eine reibungslose Abwicklung!</p>
+            <img src="package.svg">
+        </div>
+        <div class="option">
+            <h3>Nachtschwärmer Konzept</h3>
+            <p>Für Jugendliche zwischen 16 und 23 Jahren - 5 Euro Rabatt!</p>
+            <img src="savemoney.svg">
+        </div>
+        <div class="service">
+            <h3>Hochzeitsfahrten</h3>
+            <p>Unser Taxiunternehmen bietet stilvolle Hochzeitsfahrten. 
+                Lassen Sie sich an Ihrem besonderen Tag chauffieren. Unsere luxuriöse Fahrzeugflotte sorgt für ein unvergessliches Erlebnis.
+                 Kontaktieren Sie uns!</p>
+            <img src="couple.svg">
+        </div>
+        <div class="option">
+            <h3>Haustiere</h3>
+            <p>Bringen Sie Ihre Haustiere mit - wir bieten eine tierfreundliche Dienstleistung!</p>
+            <img src="animals.svg">
+        </div>
+        <div class="service">
+            <h3>Großraumtaxi</h3>
+            <p>Unser Taxiunternehmen bietet Großraumtaxis für bis zu sechs Personen. 
+                Reservieren Sie im Voraus und reisen Sie bequem als Gruppe. Unser komfortables Fahrzeug sorgt für ein entspanntes Erlebnis.
+                 Kontaktieren Sie uns!</p>
+            <img src="shuttle2.svg">
+        </div>
+        <div class="option">
+            <h3>Geschenkgutscheine</h3>
+            <p>Verschenken Sie Fahrgutscheine für Freunde und Familie.</p>
+            <img src="giftcard.svg">
+        </div>
+        <div class="service">
+            <h3>Flughafentransporte</h3>
+            <p>Unser Taxiunternehmen bietet zuverlässige Flughafentransporte. 
+                Reservieren Sie im Voraus und reisen Sie entspannt zum Flughafen. 
+                Unser komfortables Fahrzeug sorgt dafür, dass Sie pünktlich ankommen. Kontaktieren Sie uns!</p>
+            <img src="airplane.svg">
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+<section class="testimonials">
+    <div class="testimonial-container">
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-e92198d0-625d-415a-b62d-5fb1b248fb0e" data-elfsight-app-lazy></div>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="contact-form-section">
+    <div class="contact-form">
+        <h2>Kontaktformular</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Telefonnummer</label>
+                <input type="text" id="number" name="number" optional>
+            </div>
+            <div class="form-group">
+                <label for="subject">Betreff</label>
+                <input type="text" id="subject" name="subject" placeholder="optional" style="font-weight: 300; color: rgba(0, 0, 0, 0.5);">
+            </div>
+            <div class="form-group">
+                <label for="message">Nachricht</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group privacy-policy">
+                <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+                <label for="privacy-policy">Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzrichtlinien</a> zur Kenntnis genommen und bin damit einverstanden, 
+                    das die von mir angegebenen Daten elektronisch erhoben und gespeichert werden.</label>
+            </div>
+            <button type="submit">Senden</button>
+        </form>
+    </div>
+    <div class="contact-info">
+        <h2>Kontaktieren Sie uns!</h2>
+        <div class="spech">
+            <p>Rufen uns an. Gerne beraten wir Sie auch telefonisch.</p>
+            <p>Bitte lassen Sie ansonsten Ihre Onlineanfrage rechtzeitig zukommen.</p>
+            <p>Stornierung: Alle Stornierungen sind nur innerhalb der Zeiten:
+               08:00 – 18:00 und nur bis 1 Std. vor dem bestellten Termin möglich. Vielen Dank für Ihr Verständnis.</p>
+        </div>
+        <p><img src="call.svg" alt="Call Icon" class="icon">+49 881/ 3682
+        </p>
+        <p><img src="mail.svg" alt="Mail Icon" class="icon">taxistocci@aol.com
+        </p>
+    </div>
+</section>
+
+</main>
+<footer class="footer">
+    <div class="footer-content">
+        <h1 class="footer-title"><a href="#">TAXI STOCCHI</a></h1>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Schnellzugriff</h3>
+                <ul>
+                    <li><span class="footer-dot"></span><a href="#" class="scroll-link">Kontakt</a></li>
+                    <li><span class="footer-dot"></span><a href="#">Geschichte</a></li>
+                    <li><span class="footer-dot"></span><a href="#" class="scroll-link">Dienstleistungen</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Rechtliche Links</h3>
+                <ul>
+                    <li><span class="footer-dot"></span><a href="impressum.html" target="_blank">Impressum</a></li>
+                    <li><span class="footer-dot"></span><a href="datenschutz.html" target="_blank">Datenschutz</a></li>
+                    <li><span class="footer-dot"></span><a href="cockierichtlinie.html" target="_blank">Cockierichtlinie (EU)</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Kontakt Info</h3>
+                <ul>
+                    <li><img class="footer-icon" src="call_yellow.svg" alt="Telefon Icon"> <a href="#">+49 881/ 3682</a></li>
+                    <li><img class="footer-icon" src="mail_yellow.svg" alt="Email Icon"> <a href="#">taxistocci@aol.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="partners">
+            <a href="https://www.autoundservice.de/" target="_blank"><img src="auto-service-pia.png" alt="Auto Service Pia"></a>
+            <a href="https://www.redbullmuenchen.de" target="_blank"><img src="Logo.png" alt="Logo" class="partner-small"></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<script src="stocchi.js"></script>
+
+</html>
