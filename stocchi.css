@@ -172,7 +172,7 @@ header nav a:hover {
 
 /* Main Content */
 main {
-    padding-top: 11vh;
+    padding-top: 10vh;
 }
 
 /* Hero Section */
@@ -182,7 +182,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center; /* Centers content vertically */
-    height: 100vh;
+    height: 70vh;
     background-image: url('taxifotocut2.jpeg'); /* Replace with your image URL */
     background-size: cover;
     background-position: center;
@@ -634,10 +634,7 @@ button[type="submit"]:hover {
     .hero-text p {
         font-size: 1.6rem;
     }
-    .hero {
-        height: 80%;
-        width: auto;
-    }
+    
 }
 
 @media screen and (max-width: 1024px) {
@@ -662,7 +659,12 @@ button[type="submit"]:hover {
     }
 }
 
+
+/* Breakpoints */
 @media screen and (max-width: 768px) {
+    .hero {
+        height: 7cm; /* Reduce height for tablets */
+    }
     .hero-text h2 {
         font-size: 2.5rem;
     }
@@ -673,35 +675,10 @@ button[type="submit"]:hover {
 
 @media screen and (max-width: 480px) {
     .hero {
-        height: 50vh;
+        height: 30vh; /* Further reduce height for smaller screens */
     }
     .hero-text {
         text-align: center;
-        width: 95%;
-    }
-    .hero-text h2 {
-        font-size: 2rem;
-    }
-    .hero-text p {
-        font-size: 1rem;
-        margin: 0 auto;
-    }
-    
-}
-
-@media screen and (max-width: 320px) {
-    .hero-text h2 {
-        font-size: 1.8rem;
-    }
-    .hero-text p {
-        font-size: 0.9rem;
-    }
-}
-
-/* Portrait mode specific adjustments */
-@media screen and (orientation: portrait) and (max-width: 768px) {
-    .hero {
-        height: 70vh;
     }
 }
 

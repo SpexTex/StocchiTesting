@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("DOM fully loaded and parsed");
 
-    let lastScrollTop = 0;
+    let lastScrollTop = -0;
     const topBar = document.querySelector('.top-bar');
     const header = document.querySelector('header');
     const burgerMenu = document.querySelector('.burger-menu');
