@@ -49,10 +49,6 @@ header.top-bar-hidden {
     vertical-align: middle; /* Aligns the icon with the middle of the text */
 }
 
-main {
-    padding-top: calc(4vh + 6vh); /* Accounts for top-bar and header heights */
-}
-
 /* Header Styling */
 header {
     width: 100%;
@@ -177,35 +173,31 @@ main {
 
 /* Hero Section */
 .hero {
-    position: relative; /* Required for the pseudo-element to position correctly */
-    overflow: hidden;
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center; /* Centers content vertically */
-    height: 100vh;
-    background-image: url('taxifotocut2.jpeg'); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    align-items: center; 
+    justify-content: center; 
+    height: auto;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black transparent overlay */
-    z-index: 1; /* Ensures it appears above the background but below text */
+.hero img {
+    background-size: cover;
+    min-width: 60%;
 }
 
 .hero-text {
-    position: relative; /* To ensure it's above the overlay */
-    z-index: 2; /* Places the text above the overlay */
-    text-align: left; /* Centers text horizontally within its container */
+    position: absolute;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 40vw;
+    text-align: left;
     color: #ffffff;
     padding: 2vh;
+    
 }
 
 .hero-text h2 {
@@ -221,7 +213,7 @@ main {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 1;
-    margin: 0 auto; /* Ensures the text stays centered within its container */
+    max-width: 30vw;
 }
 
 
@@ -528,30 +520,29 @@ button[type="submit"]:hover {
 
 .history {
     display: flex;
-    justify-content: center; 
-    align-items: center;
-    gap: 2rem; 
-    padding: 12vh 4vw; 
-    flex-wrap: wrap; 
-    text-align: center; 
+    justify-content: center; /* Center items horizontally */
+    gap: 2rem; /* Minimal space between image and text */
+    padding: 12vh 4vw; /* Padding around the section */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    text-align: center; /* Ensure text is centered */
 }
 
 .history img {
-    max-width: 40%; 
-    height: 100%; 
+    max-width: 40%; /* Limit image width to 40% */
+    height: 100%; /* Maintain aspect ratio */
     width: 100%;
-    object-fit: cover; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    object-fit: cover; /* Ensure the image fits without distortion */
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .history-text {
-    max-width: 40%; 
+    max-width: 40%; /* Limit text width */
     text-align: left;
-    font-size: 1.2rem; 
-    line-height: 1.6; 
-    color: #333; 
-    font-family: 'Roboto', sans-serif; 
+    font-size: 1.2rem; /* Font size for readability */
+    line-height: 1.6; /* Space between lines */
+    color: #333; /* Dark text color */
+    font-family: 'Roboto', sans-serif; /* Font style */
 }
 
 
@@ -572,6 +563,10 @@ button[type="submit"]:hover {
         background: #fff;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         z-index: 1002;
+    }
+
+    .hero img {
+        background-size: cover;
     }
 
     .services {
@@ -634,13 +629,12 @@ button[type="submit"]:hover {
     .hero-text p {
         font-size: 1.6rem;
     }
-    .hero {
-        height: 80%;
-        width: auto;
-    }
 }
 
 @media screen and (max-width: 1024px) {
+    .hero {
+        width: 100%;
+    }
     .hero-text h2 {
         font-size: 3rem;
     }
@@ -663,6 +657,10 @@ button[type="submit"]:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .hero {
+        width: auto;
+        height: auto;
+    }
     .hero-text h2 {
         font-size: 2.5rem;
     }

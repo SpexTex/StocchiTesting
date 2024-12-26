@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi Stocchi</title>
+    <link rel="stylesheet" href="stocchi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar with Phone Number and Opening Hours -->
+    <div class="top-bar">
+        <span class="phone-number">
+            <img src="call.svg" alt="Call Icon" class="icon"> +49 881/ 3682
+        </span>
+        <span class="opening-hours">
+            <img src="time.svg" alt="Time Icon" class="icon">Mo-Fr 9:00 - 18:00
+        </span>
+    </div>
+  <main>
+    <!-- Header -->
+    <header>
+        <h1><a href="stocchi.html">TAXI STOCCHI</a></h1>
+        <nav class="nav-links">
+            <a href="stocchi.html">Kontakt</a>
+            <a href="#">Geschichte</a>
+            <a href="stocchi.html">Dienstleistungen</a>
+        </nav>
+        <div class="menu-overlay"></div> <!-- Added overlay here -->
+        <div class="burger-menu" onclick="toggleMenu()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        </div>
+    </header>
+    
+    <!-- Hero Section with Image and Description -->
+    <section class="history">
+        <img src="StocchiHistory.jpeg" alt="StocchiHistory">
+        <div class="history-text">
+            <h2></h2>
+            <p>Taxi Stocchi, gegründet 1969 von Alfred Stocchi,
+            blickt auf eine lange Familientradition zurück. 1991 trat ich, Udo Stocchi, 
+            in das Unternehmen ein, und gemeinsam führten mein Vater Alfred und ich den 
+            Betrieb erfolgreich weiter. Über viele Jahre haben wir unseren Kunden stets 
+            zuverlässige und freundliche Dienste geboten. Nach dem Tod meines Vaters im 
+            Jahr 2020 übernahm ich die alleinige Verantwortung für das Unternehmen, das 
+            nun bereits seit mehr als 55 Jahren besteht. Diese lange Zeitspanne steht nicht
+            nur für Kontinuität und Erfahrung, sondern auch für unsere Verbundenheit mit 
+            den Menschen, die uns vertrauen. Ich bin stolz darauf, Taxi Stocchi 
+            weiterzuführen und freue mich, diese Tradition, die mein Vater aufgebaut hat,
+            in seinem Sinne fortzuführen.</p>
+        </div>
+    </section>
+
+
+</main>
+<footer class="footer">
+    <div class="footer-content">
+        <h1 class="footer-title"><a href="#">TAXI STOCCHI</a></h1>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Schnellzugriff</h3>
+                <ul>
+                    <li><span class="footer-dot"></span><a href="#" class="scroll-link">Kontakt</a></li>
+                    <li><span class="footer-dot"></span><a href="#">Geschichte</a></li>
+                    <li><span class="footer-dot"></span><a href="#" class="scroll-link">Dienstleistungen</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Rechtliche Links</h3>
+                <ul>
+                    <li><span class="footer-dot"></span><a href="impressum.html" target="_blank">Impressum</a></li>
+                    <li><span class="footer-dot"></span><a href="datenschutz.html" target="_blank">Datenschutz</a></li>
+                    <li><span class="footer-dot"></span><a href="cockierichtlinie.html" target="_blank">Cockierichtlinie (EU)</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Kontakt Info</h3>
+                <ul>
+                    <li><img class="footer-icon" src="call_yellow.svg" alt="Telefon Icon"> <a href="#">+49 881/ 3682</a></li>
+                    <li><img class="footer-icon" src="mail_yellow.svg" alt="Email Icon"> <a href="#">taxistocci@aol.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="partners">
+            <a href="https://www.autoundservice.de/" target="_blank"><img src="auto-service-pia.png" alt="Auto Service Pia"></a>
+            <a href="https://www.redbullmuenchen.de" target="_blank"><img src="Logo.png" alt="Logo" class="partner-small"></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<script src="stocchi.js"></script>
+
+</html>

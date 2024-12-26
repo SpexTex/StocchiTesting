@@ -65,6 +65,11 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             hero.style.height = '80vh';
         }
+
+        // Fix hero text position to always stay in the same spot
+        heroText.style.top = '23%';
+        heroText.style.left = '23%';
+        heroText.style.transform = 'translate(-50%, -50%)';
     }
 
     // Parallax effect for hero image
